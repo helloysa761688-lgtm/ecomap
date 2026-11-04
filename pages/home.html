@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home — EcoMap</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="site">
+
+<header class="topbar">
+  <a class="brand" href="home.html"><span class="brand-mark">♻</span><span class="brand-word">EcoMap SA</span></a>
+  <nav class="desktop-nav">
+    <a href="home.html">Início</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="desafios.html">Desafios</a>
+    <a href="configuracoes.html">Configurações</a>
+  </nav>
+  <div class="top-actions">
+    <button class="icon-btn" type="button" aria-label="Notificações" title="Notificações" data-notify="Você não tem novas notificações."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></button>
+    <button class="icon-btn" type="button" aria-label="Sair" title="Sair" data-logout><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.8 0"/></svg></button>
+  </div>
+</header>
+<nav class="bottom-nav">
+  <a href="home.html" class="active" aria-label="Início"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a>
+  <a href="mapa.html" aria-label="Mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></a>
+  <a href="desafios.html" aria-label="Desafios"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></a>
+  <a href="configuracoes.html" aria-label="Configurações"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></a>
+</nav>
+
+<main>
+<section class="hero">
+  <div class="page hero-grid">
+    <div>
+      <div style="font-size:28px;font-weight:800">🌿 Eco</div>
+      <h1>Olá, <span id="userNameDisplay">Felipe</span>!</h1>
+      <p style="font-size:18px">Pequenas ações fazem uma grande diferença.</p>
+      <!--<a class="btn btn-purple" href="desafios.html">Ver missões</a>-->
+    </div>
+    <div class="hero-card">
+      <div class="mission-card">
+        <h2 style="margin-top:0">Missão atual:</h2>
+        <strong id="missionTitle">Cadastre-se para jogar e completar missões!</strong>
+        <div class="progress" style="margin-top:14px"><span id="missionBar" style="width:0%"></span></div>
+        <div class="progress-label" id="missionLabel">0/3 concluídas</div>
+      </div>
+      <a class="btn btn-purple home-register-btn" id="homeMissionBtn" href="login.html?returnTo=home.html&tab=register">Se cadastre</a>
+    </div>
+  </div>
+</section>
+<section class="page">
+  <div class="section-head"><div><h2 style="color:#5a5b55">Dicas Ecológicas</h2><p class="mini-note">Sugestões para reduzir seu impacto no meio ambiente.</p></div></div>
+  <div class="grid grid-3">
+    <article class="eco-tip" data-tips="0" role="button" tabindex="0" title="Toque para ver outra dica"><h3>Reduza, Reutilize, Recicle</h3><p>Saiba como reduzir seu impacto no meio ambiente.</p><span class="eco-tip-hint">↻ Toque para ver outra dica</span></article>
+    <article class="eco-tip" data-tips="1" role="button" tabindex="0" title="Toque para ver outra dica"><h3>Evite descartáveis</h3><p>Prefira itens reutilizáveis no dia a dia.</p><span class="eco-tip-hint">↻ Toque para ver outra dica</span></article>
+    <article class="eco-tip" data-tips="2" role="button" tabindex="0" title="Toque para ver outra dica"><h3>Dê um novo destino</h3><p>Encontre pontos de coleta próximos de você.</p><span class="eco-tip-hint">↻ Toque para ver outra dica</span></article>
+  </div>
+</section>
+</main>
+
+</div>
+<!-- Aviso de notificações (pop up no topo) -->
+<div class="eco-toast" id="ecoToast" role="status" aria-live="polite">
+  <div class="eco-toast-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+  <div class="eco-toast-text"><strong data-toast-title></strong><span data-toast-text></span></div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

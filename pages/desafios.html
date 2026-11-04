@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafios — EcoMap</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-protected="true">
+<div class="site">
+
+<header class="topbar">
+  <a class="brand" href="home.html"><span class="brand-mark">♻</span><span class="brand-word">EcoMap SA</span></a>
+  <nav class="desktop-nav">
+    <a href="home.html">Início</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="desafios.html">Desafios</a>
+    <a href="configuracoes.html">Configurações</a>
+  </nav>
+  <div class="top-actions">
+    <button class="icon-btn" type="button" aria-label="Notificações" title="Notificações" data-notify="Você não tem novas notificações."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></button>
+    <button class="icon-btn" type="button" aria-label="Sair" title="Sair" data-logout><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.8 0"/></svg></button>
+  </div>
+</header>
+<nav class="bottom-nav">
+  <a href="home.html" class="active" aria-label="Início"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a>
+  <a href="mapa.html" aria-label="Mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></a>
+  <a href="desafios.html" aria-label="Desafios"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></a>
+  <a href="configuracoes.html" aria-label="Configurações"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></a>
+</nav>
+
+<main class="page challenge-page">
+  <div style="text-align:center;padding-top:10px">
+    <div style="color:#fff;font-size:25px;font-weight:800">🌿 Eco</div>
+    <div class="level-title">Nível 1<br>Cuidador urbano</div>
+  </div>
+  <section class="level-card">
+    <div style="font-size:22px"><strong id="levelPoints">0</strong> Pontos</div>
+    <div class="progress" style="margin-top:10px"><span id="levelBar" style="width:0%"></span></div>
+    <small id="levelGoal">0 / 2.500</small>
+  </section>
+  <h2 style="color:#fff;text-align:center;font-size:30px">Missões semanais</h2>
+  <section class="challenge-list">
+    <div class="challenge" data-mission="garrafas"><button class="status" data-check></button><div class="challenge-text">Reciclar 3 garrafas plásticas</div><button class="btn" style="background:#c697e6;color:#fff;min-height:34px;padding:6px 13px" type="button" data-modal-open="modal-garrafas">Detalhes</button></div>
+    <div class="challenge" data-mission="reutilizar"><button class="status" data-check></button><div class="challenge-text">Reutilizar pelo menos 1 item</div><button class="btn" style="background:#c697e6;color:#fff;min-height:34px;padding:6px 13px" type="button" data-modal-open="modal-reutilizar">Detalhes</button></div>
+    <div class="challenge" data-mission="descartaveis"><button class="status" data-check></button><div class="challenge-text">Não utilizar descartáveis por 3 dias</div><button class="btn" style="background:#c697e6;color:#fff;min-height:34px;padding:6px 13px" type="button" data-modal-open="modal-descartaveis">Detalhes</button></div>
+    <a class="btn btn-purple" id="registerMission" href="#">Registrar missão</a>
+  </section>
+</main>
+
+</div>
+<!-- Detalhes da missão: Reciclar 3 garrafas plásticas -->
+<div class="eco-modal" id="modal-garrafas" role="dialog" aria-modal="true" aria-labelledby="modal-garrafas-titulo">
+  <div class="eco-modal-panel">
+    <div class="eco-modal-head">
+      <div class="setting-icon" aria-hidden="true">♻</div>
+      <h2 id="modal-garrafas-titulo">Reciclar 3 garrafas plásticas</h2>
+      <button type="button" class="eco-modal-close" data-modal-close aria-label="Fechar">✕</button>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Sobre a missão</h3>
+      <p>Descarte corretamente 3 garrafas plásticas em um ecoponto da cidade, para que elas sigam para a reciclagem.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Como cumprir</h3>
+      <ul><li>Esvazie e enxágue as garrafas.</li><li>Leve até um ecoponto (veja o mais próximo no Mapa).</li><li>Volte aqui, marque a missão como concluída e toque em “Registrar missão”.</li></ul>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Dica</h3>
+      <p>Confira no site oficial do Semasa quais materiais o ecoponto aceita antes de sair de casa.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Recompensa e status</h3>
+      <p><strong>+250 XP</strong> ao registrar a missão. Status: <strong data-mission-status="garrafas">Pendente</strong></p>
+    </div>
+    <button type="button" class="btn btn-purple eco-modal-action" data-modal-close>Fechar</button>
+  </div>
+</div>
+
+<!-- Detalhes da missão: Reutilizar pelo menos 1 item -->
+<div class="eco-modal" id="modal-reutilizar" role="dialog" aria-modal="true" aria-labelledby="modal-reutilizar-titulo">
+  <div class="eco-modal-panel">
+    <div class="eco-modal-head">
+      <div class="setting-icon" aria-hidden="true">↻</div>
+      <h2 id="modal-reutilizar-titulo">Reutilizar pelo menos 1 item</h2>
+      <button type="button" class="eco-modal-close" data-modal-close aria-label="Fechar">✕</button>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Sobre a missão</h3>
+      <p>Dê uma nova utilidade a um item que iria para o lixo, evitando o descarte e o consumo de algo novo.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Como cumprir</h3>
+      <ul><li>Escolha um item que você usaria menos ou descartaria.</li><li>Use de novo ou transforme, por exemplo um pote de vidro virando porta-objetos.</li><li>Marque a missão como concluída e toque em “Registrar missão”.</li></ul>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Dica</h3>
+      <p>Sacolas, potes, caixas e roupas velhas costumam ter uma segunda utilidade em casa.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Recompensa e status</h3>
+      <p><strong>+250 XP</strong> ao registrar a missão. Status: <strong data-mission-status="reutilizar">Pendente</strong></p>
+    </div>
+    <button type="button" class="btn btn-purple eco-modal-action" data-modal-close>Fechar</button>
+  </div>
+</div>
+
+<!-- Detalhes da missão: Não utilizar descartáveis por 3 dias -->
+<div class="eco-modal" id="modal-descartaveis" role="dialog" aria-modal="true" aria-labelledby="modal-descartaveis-titulo">
+  <div class="eco-modal-panel">
+    <div class="eco-modal-head">
+      <div class="setting-icon" aria-hidden="true">🌿</div>
+      <h2 id="modal-descartaveis-titulo">Não utilizar descartáveis por 3 dias</h2>
+      <button type="button" class="eco-modal-close" data-modal-close aria-label="Fechar">✕</button>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Sobre a missão</h3>
+      <p>Passe 3 dias sem usar itens descartáveis, como copos, canudos, talheres e sacolas plásticas.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Como cumprir</h3>
+      <ul><li>Leve sua garrafa, copo e sacola reutilizáveis.</li><li>Recuse canudos, talheres e embalagens descartáveis.</li><li>Ao final dos 3 dias, marque a missão como concluída e toque em “Registrar missão”.</li></ul>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Dica</h3>
+      <p>Deixe os itens reutilizáveis junto da bolsa ou da mochila para não esquecer.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Recompensa e status</h3>
+      <p><strong>+250 XP</strong> ao registrar a missão. Status: <strong data-mission-status="descartaveis">Pendente</strong></p>
+    </div>
+    <button type="button" class="btn btn-purple eco-modal-action" data-modal-close>Fechar</button>
+  </div>
+</div>
+
+<!-- Aviso de notificações (pop up no topo) -->
+<div class="eco-toast" id="ecoToast" role="status" aria-live="polite">
+  <div class="eco-toast-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+  <div class="eco-toast-text"><strong data-toast-title></strong><span data-toast-text></span></div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

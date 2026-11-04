@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login da gamificação — EcoMap</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<main class="auth-page">
+<section class="auth-card">
+<div class="auth-logo">
+  <div class="logo-pin"><span>♻</span></div>
+  <div class="eco-word">EcoMap SA</div>
+</div>
+<div style="text-align:center;margin-bottom:18px">
+  <h2 style="margin:0 0 8px">Entre para jogar! 🏆</h2>
+  <p style="margin:0;font-size:13px">Para registrar visitas, ganhar pontos e acompanhar seu nível, crie uma conta ou entre na sua conta.</p>
+</div>
+<div class="auth-switch">
+  <button type="button" class="active" data-auth-tab="#accountLoginPanel">Entrar</button>
+  <button type="button" data-auth-tab="#accountRegisterPanel">Criar conta</button>
+</div>
+<div id="accountLoginPanel" class="auth-panel active">
+<form id="accountLoginForm">
+  <input class="input" id="accountEmail" type="email" placeholder="✉  E-mail" required>
+  <input class="input" id="accountPassword" type="password" placeholder="🔒  Senha" required>
+  <button class="btn btn-green" type="submit">Entrar e jogar</button>
+</form>
+</div>
+<div id="accountRegisterPanel" class="auth-panel">
+<form id="accountRegisterForm">
+  <input class="input" id="accountName" type="text" placeholder="🌿  Seu nome" required>
+  <input class="input" id="registerEmail" type="email" placeholder="✉  E-mail" required>
+  <input class="input" id="registerPassword" type="password" placeholder="🔒  Crie uma senha" required>
+  <input class="input" id="registerConfirm" type="password" placeholder="🔒  Confirme sua senha" required>
+  <button class="btn btn-green" type="submit">Criar conta e jogar</button>
+</form>
+</div>
+<p class="auth-help">Home, Mapa e filtros continuam disponíveis sem cadastro. O login é necessário somente para a gamificação.</p>
+<a href="home.html" style="display:block;text-align:center;margin-top:18px;font-size:13px">← Continuar como visitante</a>
+</section>
+</main>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Fotos dos locais (página "Registrar visita")
+
+Para usar uma foto sua em cada local, salve aqui um arquivo com o ID do local no nome
+(.jpg, .jpeg, .png ou .webp). Se o arquivo não existir, o site usa a foto do Street View
+do endereço (precisa da chave do Google Maps com a "Street View Static API" ativada).
+Se nenhuma carregar, aparece a imagem padrão de visita.
+
+IDs dos locais:
+  vila-linda                  Ecoponto Vila Linda
+  paraiso                     Ecoponto Paraíso
+  centro                      Ecoponto Centro
+  parque-celso-daniel         Parque Celso Daniel
+  parque-central              Parque Central
+  ciclorrota-pedroso-estacao  Ciclorrota Parque do Pedroso – Estação Santo André
+  arraia-sustentavel          Arraiá Sustentável — Parque do Pedroso
+
+Exemplo: assets/locais/parque-central.jpg

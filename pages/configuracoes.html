@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configurações — EcoMap</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="site">
+
+<header class="topbar">
+  <a class="brand" href="home.html"><span class="brand-mark">♻</span><span class="brand-word">EcoMap SA</span></a>
+  <nav class="desktop-nav">
+    <a href="home.html">Início</a>
+    <a href="mapa.html">Mapa</a>
+    <a href="desafios.html">Desafios</a>
+    <a href="configuracoes.html">Configurações</a>
+  </nav>
+  <div class="top-actions">
+    <button class="icon-btn" type="button" aria-label="Notificações" title="Notificações" data-notify="Você não tem novas notificações."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></button>
+    <button class="icon-btn" type="button" aria-label="Sair" title="Sair" data-logout><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v10"/><path d="M18.4 6.6a9 9 0 1 1-12.8 0"/></svg></button>
+  </div>
+</header>
+<nav class="bottom-nav">
+  <a href="home.html" class="active" aria-label="Início"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></a>
+  <a href="mapa.html" aria-label="Mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></a>
+  <a href="desafios.html" aria-label="Desafios"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></a>
+  <a href="configuracoes.html" aria-label="Configurações"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></a>
+</nav>
+
+<main class="page">
+  <h1 class="page-title">Configurações</h1>
+  <p class="page-subtitle">Gerencie sua experiência no EcoMap.</p>
+  <section class="settings">
+    <div class="setting setting-action" role="button" tabindex="0" data-notify="Você não tem novas notificações."><div class="setting-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div><div class="setting-main"><strong>Notificações</strong></div></div>
+    <a class="setting setting-link" id="settingsAccountLink" href="entrada.html"><div class="setting-icon">✎</div><div class="setting-main"><strong>Trocar nome</strong><span>Alterar o nome exibido no EcoMap</span></div><span>›</span></a>
+    <div class="setting setting-action" role="button" tabindex="0" data-modal-open="modalPrivacidade"><div class="setting-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><div class="setting-main"><strong>Privacidade</strong></div><span>›</span></div>
+    <div class="setting"><div class="setting-icon" data-theme-icon>☀</div><div class="setting-main"><strong>Tema</strong></div><button class="toggle off" id="themeToggle" data-theme-toggle type="button" role="switch" aria-checked="false" aria-label="Ativar modo escuro"><span></span></button></div>
+    <div class="setting setting-action" role="button" tabindex="0" data-modal-open="modalAjuda"><div class="setting-icon">?</div><div class="setting-main"><strong>Ajuda</strong><span>Central de Suporte</span></div><span>›</span></div>
+    <div class="setting setting-action" role="button" tabindex="0" data-modal-open="modalSobre"><div class="setting-icon">i</div><div class="setting-main"><strong>Sobre</strong><span>Informações do app</span></div><span>›</span></div>
+  </section>
+</main>
+
+</div>
+
+<!-- Aviso de notificações (pop up no topo) -->
+<div class="eco-toast" id="ecoToast" role="status" aria-live="polite">
+  <div class="eco-toast-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></div>
+  <div class="eco-toast-text"><strong data-toast-title></strong><span data-toast-text></span></div>
+</div>
+
+<!-- Privacidade / LGPD -->
+<div class="eco-modal" id="modalPrivacidade" role="dialog" aria-modal="true" aria-labelledby="modalPrivacidadeTitulo">
+  <div class="eco-modal-panel">
+    <div class="eco-modal-head">
+      <div class="setting-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+      <h2 id="modalPrivacidadeTitulo">Privacidade e LGPD</h2>
+      <button type="button" class="eco-modal-close" data-modal-close aria-label="Fechar">✕</button>
+    </div>
+    <div class="eco-modal-card">
+      <p>O EcoMap SA respeita a sua privacidade. Tratamos dados pessoais de acordo com a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018), com transparência e apenas no que é necessário para o app funcionar.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Quais dados usamos</h3>
+      <ul>
+        <li>Seu nome, informado ao entrar no app.</li>
+        <li>Dados da conta (nome e e-mail), se você criar uma conta para participar da gamificação.</li>
+        <li>Localização do dispositivo, somente se você permitir, para filtrar locais por distância.</li>
+        <li>Suas preferências no app, como o tema claro ou escuro.</li>
+      </ul>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Para que usamos</h3>
+      <p>Para personalizar a sua experiência, registrar visitas, pontos e missões e mostrar pontos sustentáveis perto de você. Não usamos seus dados para outras finalidades sem o seu consentimento.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Armazenamento e compartilhamento</h3>
+      <p>Nesta versão, as informações ficam salvas apenas no seu navegador. Não vendemos dados pessoais. O mapa é fornecido pelo Google Maps, que pode tratar dados técnicos conforme a política de privacidade do Google.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Seus direitos</h3>
+      <p>Conforme a LGPD, você pode solicitar a confirmação do tratamento, o acesso, a correção, a anonimização ou eliminação dos seus dados, a portabilidade, informações sobre compartilhamento e a revogação do consentimento. Você pode alterar seus dados em Configurações › Trocar nome (ou Alterar cadastro) e desativar a permissão de localização nas configurações do navegador.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Fale com a gente</h3>
+      <p>Dúvidas ou solicitações sobre seus dados: privacidade@ecomap.sa (contato simbólico por enquanto).</p>
+    </div>
+    <button type="button" class="btn btn-purple eco-modal-action" data-modal-close>Entendi</button>
+  </div>
+</div>
+
+<!-- Ajuda / Central de Suporte -->
+<div class="eco-modal" id="modalAjuda" role="dialog" aria-modal="true" aria-labelledby="modalAjudaTitulo">
+  <div class="eco-modal-panel">
+    <div class="eco-modal-head">
+      <div class="setting-icon" aria-hidden="true">?</div>
+      <h2 id="modalAjudaTitulo">Central de Suporte</h2>
+      <button type="button" class="eco-modal-close" data-modal-close aria-label="Fechar">✕</button>
+    </div>
+    <div class="eco-modal-card">
+      <p>Precisa de ajuda? Fale com a equipe do EcoMap SA por um dos canais abaixo.</p>
+    </div>
+    <div class="help-channels">
+      <div class="help-channel">
+        <div class="help-channel-logo logo-whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></div>
+        <div class="help-channel-text"><strong>WhatsApp</strong><span>(11) 90000-0000</span></div>
+      </div>
+      <div class="help-channel">
+        <div class="help-channel-logo logo-instagram" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.3" cy="6.7" r="1" fill="#fff" stroke="none"/></svg></div>
+        <div class="help-channel-text"><strong>Instagram</strong><span>@ecomap.sa</span></div>
+      </div>
+      <div class="help-channel">
+        <div class="help-channel-logo logo-email" aria-hidden="true"><svg viewBox="52 42 88 66"><path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/><path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/><path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/><path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92"/><path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/></svg></div>
+        <div class="help-channel-text"><strong>E-mail</strong><span>contato@ecomap.sa</span></div>
+      </div>
+    </div>
+    <p class="eco-modal-note">Atendimento de segunda a sexta, das 9h às 18h. Canais simbólicos por enquanto, serão ativados em breve.</p>
+    <div class="eco-modal-card">
+      <h3>Perguntas frequentes</h3>
+      <details class="help-faq">
+        <summary>Como registro uma visita?</summary>
+        <p>Abra o Mapa, escolha um local e toque em “Entrar para registrar visita”. Para registrar visitas e ganhar pontos é preciso entrar ou criar uma conta.</p>
+      </details>
+      <details class="help-faq">
+        <summary>Como altero meu nome?</summary>
+        <p>Em Configurações, toque em “Trocar nome” e informe o nome que você quer exibir. Se você já tem cadastro para jogar, a opção aparece como “Alterar cadastro”.</p>
+      </details>
+      <details class="help-faq">
+        <summary>Os horários dos ecopontos estão atualizados?</summary>
+        <p>Endereços e horários são informativos. Confirme sempre no site oficial do Semasa antes de levar seus resíduos.</p>
+      </details>
+    </div>
+    <button type="button" class="btn btn-purple eco-modal-action" data-modal-close>Fechar</button>
+  </div>
+</div>
+
+<!-- Sobre o EcoMap -->
+<div class="eco-modal" id="modalSobre" role="dialog" aria-modal="true" aria-labelledby="modalSobreTitulo">
+  <div class="eco-modal-panel">
+    <div class="eco-modal-head">
+      <div class="setting-icon" aria-hidden="true">i</div>
+      <h2 id="modalSobreTitulo">Sobre o EcoMap</h2>
+      <button type="button" class="eco-modal-close" data-modal-close aria-label="Fechar">✕</button>
+    </div>
+    <div class="eco-modal-card">
+      <h3>O que é o EcoMap SA</h3>
+      <p>Conectando você a uma cidade mais sustentável. O EcoMap SA ajuda moradores de Santo André a encontrar ecopontos, parques, ciclovias e eventos sustentáveis, e incentiva boas práticas com missões e pontos.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Missão</h3>
+      <p>Facilitar o acesso da população de Santo André a ecopontos, parques, ciclovias e eventos sustentáveis, incentivando o descarte correto de resíduos e hábitos sustentáveis no dia a dia.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Visão</h3>
+      <p>Ser uma referência digital em vida sustentável na cidade, conectando pessoas e locais para construir uma Santo André mais verde e consciente.</p>
+    </div>
+    <div class="eco-modal-card">
+      <h3>Valores</h3>
+      <ul class="eco-values">
+        <li><strong>Sustentabilidade:</strong> cuidado com o meio ambiente em cada ação.</li>
+        <li><strong>Comunidade:</strong> hábitos sustentáveis construídos junto com os moradores.</li>
+        <li><strong>Transparência:</strong> informações claras, com base em fontes oficiais.</li>
+        <li><strong>Engajamento:</strong> missões e pontos que tornam a ação ecológica mais divertida.</li>
+      </ul>
+    </div>
+    <button type="button" class="btn btn-purple eco-modal-action" data-modal-close>Fechar</button>
+  </div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

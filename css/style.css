@@ -1,0 +1,572 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root{
+  --green:#3fcf4f;
+  --green-2:#73df4d;
+  --lime:#a9eb17;
+  --purple:#7f3fd1;
+  --purple-dark:#5b1ba0;
+  --purple-light:#c995ea;
+  --aqua:#38cbd4;
+  --cream:#fffdf1;
+  --soft:#ead8f2;
+  --ink:#25232a;
+  --white:#fff;
+  --danger:#ff333b;
+  --shadow:0 8px 22px rgba(45,27,70,.18);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;min-height:100%;font-family:'Poppins',Arial,sans-serif;color:var(--ink);background:#f4f4f4}
+a{text-decoration:none;color:inherit}
+button,input{font:inherit}
+button{border:0;cursor:pointer}
+body{min-height:100vh}
+
+/* Desktop web shell */
+.site{min-height:100vh;background:linear-gradient(135deg,#f5fff1,#f7efff)}
+.topbar{
+  position:sticky;top:0;z-index:50;height:74px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 28px;background:linear-gradient(90deg,#31c64d,#54d44c);
+  color:#fff;box-shadow:0 3px 14px rgba(0,0,0,.14)
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:28px}
+.brand-mark{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#fff;color:var(--purple);font-size:25px;box-shadow:0 3px 8px #0002}
+.brand-word{font-size:30px;letter-spacing:-1px}
+.top-actions{display:flex;align-items:center;gap:10px}
+.icon-btn{width:44px;height:44px;border-radius:50%;background:#ffffff20;color:#fff;font-size:23px}
+.desktop-nav{display:flex;gap:7px;align-items:center}
+.desktop-nav a{padding:10px 13px;border-radius:12px;font-weight:600}
+.desktop-nav a:hover,.desktop-nav a.active{background:#ffffff22}
+
+.page{width:min(1180px,94%);margin:0 auto;padding:32px 0 90px}
+.page-title{font-size:38px;margin:0 0 8px;color:var(--purple);font-weight:800}
+.page-subtitle{margin:0 0 24px;color:#65606d}
+
+.hero{
+  background:linear-gradient(135deg,#35cc4e 0%,#55d94d 45%,#1da878 100%);
+  color:#fff;border-radius:0 0 38px 38px;padding:36px 28px 44px;
+}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:5px 0 20px;font-weight:800}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.hero-card{background:#ffffff24;border:1px solid #fff4;border-radius:28px;padding:24px;backdrop-filter:blur(5px)}
+.mission-card{
+  background:linear-gradient(120deg,#f5ffd0,#b7f6db);
+  color:#5e6060;border-radius:20px;padding:22px;box-shadow:var(--shadow)
+}
+.progress{height:13px;background:#fff;border-radius:999px;overflow:hidden}
+.progress>span{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--purple),#a75ee2)}
+.progress-label{font-size:14px;text-align:right;margin-top:6px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  min-height:48px;padding:12px 24px;border-radius:999px;font-weight:700;
+  transition:.2s transform,.2s filter
+}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.03)}
+.btn-purple{background:linear-gradient(90deg,#7a27c5,#9d55dc);color:#fff}
+.btn-green{background:linear-gradient(90deg,#56c839,#a9ed18);color:#fff}
+.btn-aqua{background:linear-gradient(90deg,#20b8c4,#59d8e1);color:#fff}
+.btn-danger{background:var(--danger);color:#fff}
+
+.grid{display:grid;gap:20px}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:#fff;border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.card h2,.card h3{margin-top:0}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:30px 0 15px}
+.eco-tip{position:relative;overflow:hidden;background:#f1ffd7;border-radius:22px;padding:22px}
+.eco-tip:after{content:"♻";position:absolute;right:18px;bottom:-15px;font-size:80px;color:#6fd24c66}
+.eco-tip h3{margin:0;color:var(--purple)}
+.mini-note{color:#6b6b6b;font-size:14px;line-height:1.6}
+
+/* Map */
+.map-wrap{display:grid;grid-template-columns:1.6fr .75fr;gap:20px}
+.map{
+  min-height:600px;border-radius:28px;position:relative;overflow:hidden;
+  background:
+    linear-gradient(25deg,transparent 48%,#f4df6d 49%,#f4df6d 53%,transparent 54%),
+    linear-gradient(-15deg,transparent 36%,#77a9ef 37%,#77a9ef 42%,transparent 43%),
+    repeating-linear-gradient(45deg,#f7f5e8 0 44px,#fff 44px 48px);
+  box-shadow:var(--shadow)
+}
+.map:before{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,transparent 0 12%,#fff 12.5% 13%,transparent 13.5% 29%,#fff 29.5% 30%,transparent 30.5% 52%,#fff 52.5% 53%,transparent 53.5% 72%,#fff 72.5% 73%,transparent 73.5%);
+  opacity:.65}
+.search{position:absolute;z-index:2;left:22px;right:22px;top:22px;background:#fff;border-radius:999px;padding:13px 18px;box-shadow:0 6px 18px #0002;color:#6c3db3;font-weight:600}
+.pin{position:absolute;z-index:3;left:54%;top:48%;font-size:58px;color:#ff2e2e;filter:drop-shadow(0 5px 5px #0003)}
+.map-panel{background:linear-gradient(#6d20ad,#a767dd);color:#fff;border-radius:28px;padding:22px}
+.filter-row{display:flex;align-items:center;gap:10px;padding:13px 4px;border-bottom:1px solid #fff5}
+.check{width:24px;height:24px;border-radius:6px;background:#c47ee8;display:grid;place-items:center;font-weight:900}
+.distance{margin-top:18px}
+.radio{width:22px;height:22px;border:2px solid #fff;border-radius:50%;display:inline-block}
+.location-card{background:#fff;color:#222;border-radius:24px;padding:18px;box-shadow:var(--shadow)}
+.location-photo{width:100%;height:210px;border-radius:18px;object-fit:cover;background:linear-gradient(135deg,#86c85d,#d6e7bd);display:block}
+.detail-row{padding:12px 0;border-bottom:2px solid #e2a8ee}
+.detail-row strong{display:block;margin-bottom:4px}
+.button-stack{display:grid;gap:10px;margin-top:16px}
+
+/* Challenges */
+.challenge-page{background:linear-gradient(#36ca4e 0 220px,#fff 220px 235px,#bcefc0 235px,#d8f6db 100%);min-height:650px;border-radius:0 0 34px 34px}
+.level-card{background:#217c35;color:#fff;border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+.level-title{text-align:center;color:var(--purple);font-size:32px;font-weight:800}
+.challenge-list{background:#fffdf1;border-radius:24px;padding:18px;box-shadow:var(--shadow)}
+.challenge{display:flex;align-items:center;gap:12px;padding:14px 4px;border-bottom:2px solid #d9b7e7}
+.challenge:last-child{border-bottom:0}
+.status{width:32px;height:32px;border:3px solid #222;border-radius:50%;display:grid;place-items:center;flex:0 0 auto}
+.status.done{background:#9bdd35;border-color:#476d24;color:#fff}
+.challenge-text{flex:1}
+
+/* Settings */
+.settings{max-width:760px;margin:0 auto;background:#ead8f2;border-radius:28px;padding:25px;box-shadow:var(--shadow)}
+.setting{display:flex;align-items:center;gap:15px;background:#fffdf4;border-radius:16px;padding:15px 18px;margin-bottom:12px}
+.setting-icon{width:42px;height:42px;border-radius:50%;background:#a46bd4;color:#fff;display:grid;place-items:center;font-size:21px}
+.setting-main{flex:1}.setting-main strong{display:block}.setting-main span{font-size:12px;color:#555}
+.toggle{width:48px;height:26px;border-radius:999px;background:#6720a6;padding:3px}.toggle span{display:block;width:20px;height:20px;border-radius:50%;background:#fff;margin-left:20px}
+
+/* Login */
+.auth-page{min-height:100vh;display:grid;place-items:center;padding:30px;background:linear-gradient(160deg,#59cc3f 0%,#57c6b0 38%,#7c4bd3 78%,#8c43d0 100%)}
+.auth-card{width:min(470px,94vw);background:#ffffff18;border:1px solid #fff4;border-radius:34px;padding:34px;box-shadow:0 18px 45px #0002;backdrop-filter:blur(7px);color:#fff}
+.auth-logo{text-align:center;margin-bottom:24px}
+.logo-pin{margin:auto;width:110px;height:110px;border-radius:58% 58% 58% 10%;transform:rotate(-45deg);background:#8b43d2;display:grid;place-items:center;box-shadow:0 8px 18px #0003}
+.logo-pin span{transform:rotate(45deg);font-size:53px}
+.eco-word{font-size:50px;font-weight:800;margin-top:12px}
+.input{width:100%;padding:15px 17px;border:0;border-radius:999px;margin:8px 0;color:#333;outline:3px solid transparent}
+.input:focus{outline-color:#a9eb17}
+.auth-card .btn{width:100%;margin-top:10px}
+.divider{display:flex;align-items:center;gap:12px;margin:20px 0;font-weight:700}
+.divider:before,.divider:after{content:"";height:2px;flex:1;background:#fff}
+.socials{display:flex;justify-content:center;gap:15px}.social{width:54px;height:54px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:900;font-size:22px}
+
+/* Mobile bottom nav */
+.bottom-nav{display:none}
+.mobile-only{display:none}
+
+/* Splash */
+.splash{min-height:100vh;display:grid;place-items:center;background:linear-gradient(160deg,#58cb40,#59c7b1 40%,#7d49d1 78%,#8b43cf);color:#fff}
+.splash-inner{text-align:center}
+.splash-inner .logo-pin{width:145px;height:145px}
+.splash-inner .logo-pin span{font-size:72px}
+.splash-inner h1{font-size:66px;margin:18px 0 0;font-weight:800}
+
+/* Responsive */
+@media(max-width:900px){
+  .desktop-nav{display:none}
+  .hero-grid,.map-wrap,.grid-3{grid-template-columns:1fr}
+  .grid-2{grid-template-columns:1fr}
+  .page{padding-bottom:95px}
+  .topbar{height:68px;padding:0 16px}
+  .brand-word{font-size:25px}
+  .bottom-nav{
+    position:fixed;display:flex;left:12px;right:12px;bottom:12px;z-index:100;
+    height:66px;border-radius:30px;background:linear-gradient(90deg,#4fd06b,#36d77d);
+    box-shadow:0 10px 28px #0003;align-items:center;justify-content:space-around
+  }
+  .bottom-nav a{color:#fff;font-size:25px;text-align:center;padding:7px 16px}
+  .bottom-nav a.active{color:#7b36c7}
+  .mobile-only{display:block}
+}
+@media(max-width:600px){
+  .topbar{position:sticky}
+  .page{width:92%;padding-top:22px}
+  .page-title{font-size:30px}
+  .hero{padding:24px 16px 28px;border-radius:0 0 26px 26px}
+  .hero h1{font-size:35px}
+  .card{padding:18px}
+  .map{min-height:470px}
+  .map-panel{padding:17px}
+  .location-photo{height:180px}
+  .challenge-page{min-height:600px}
+  .level-title{font-size:26px}
+  .auth-card{padding:26px 20px}
+  .eco-word{font-size:42px}
+  .splash-inner h1{font-size:48px}
+  .splash-inner .logo-pin{width:120px;height:120px}
+}
+
+.game-entry{margin-top:28px;background:linear-gradient(135deg,#5f20a5,#944bd0);color:#fff;border-radius:26px;padding:24px;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.game-entry h2{margin:0 0 7px;font-size:24px}.game-entry p{margin:0;opacity:.92;font-size:14px;line-height:1.6}.game-entry .btn{background:#fff;color:#7025b0}
+.auth-switch{display:flex;gap:8px;background:#ffffff18;padding:5px;border-radius:999px;margin-bottom:18px}.auth-switch button{flex:1;min-height:40px;border-radius:999px;background:transparent;color:#fff;font-weight:700}.auth-switch button.active{background:#fff;color:#7229ad}.auth-panel{display:none}.auth-panel.active{display:block}.auth-help{text-align:center;font-size:12px;line-height:1.5;margin:16px 0 0;opacity:.9}
+@media(max-width:600px){.game-entry{flex-direction:column;align-items:stretch}.game-entry .btn{width:100%}}
+
+
+/* Home: resumo de gamificação + registrar visita */
+.home-level-card{
+  margin-top:16px;
+  padding:18px;
+  border-radius:18px;
+  background:linear-gradient(135deg,#f4e9fb,#fff);
+  border:1px solid rgba(109,32,173,.12);
+}
+.home-level-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:18px;
+}
+.home-level-top > div:first-child{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+.home-level-label{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  opacity:.7;
+}
+.home-level-name{
+  font-size:13px;
+  opacity:.8;
+}
+.home-points{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  text-align:right;
+}
+.home-points strong{
+  font-size:24px;
+  color:#6d20ad;
+}
+.home-points span{
+  font-size:12px;
+  opacity:.75;
+}
+.home-register-btn{
+  width:100%;
+  margin-top:12px;
+  text-align:center;
+}
+.setting-link{
+  text-decoration:none;
+  color:inherit;
+}
+@media (max-width:720px){
+  .home-level-top{gap:10px}
+  .home-points strong{font-size:21px}
+}
+
+
+/* EcoMap: mapa real, filtros funcionais e cartões de ecopontos */
+.map-live-wrap{background:#eaf4e7;min-height:600px}
+.eco-google-map{position:absolute;inset:0;width:100%;height:100%;min-height:600px}
+.map-search{position:absolute;z-index:5;left:18px;right:18px;top:18px;display:flex;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:10px 14px;box-shadow:0 6px 18px #0002;color:var(--purple);font-size:22px}
+.map-search input{min-width:0;flex:1;border:0;outline:0;color:#3d3445;background:transparent;font-size:14px}
+.map-search button{width:30px;height:30px;border-radius:50%;background:#f0e4f7;color:var(--purple);font-size:22px;line-height:1}
+.map-status{position:absolute;z-index:5;left:18px;bottom:16px;max-width:calc(100% - 36px);background:#fff;border-radius:12px;padding:8px 12px;font-size:12px;color:#38583d;box-shadow:0 3px 12px #0002}
+.map-status.is-error{color:#7d286f;background:#fff8ff}
+.map-key-help{position:absolute;inset:80px 18px 60px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:22px;background:linear-gradient(145deg,#f3ffe8,#f3e7fc);border:1px solid #d8edce;border-radius:24px;color:#35313b;overflow:auto}
+.map-key-help-icon{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#39c951,#a8e91d);color:#fff;font-size:28px}
+.map-key-help h3{color:var(--purple);font-size:22px;margin:12px 0 5px}
+.map-key-help p{font-size:13px;line-height:1.6;max-width:430px;margin:7px 0}
+.map-key-help code{background:#fff;border-radius:5px;padding:2px 4px;color:#6926a4;overflow-wrap:anywhere}
+.map-key-help a{display:inline-block;margin-top:10px;background:var(--purple);color:#fff;border-radius:999px;padding:10px 16px;font-weight:700;font-size:13px}
+.map-panel-intro{font-size:13px;line-height:1.5;color:#fff;margin-top:-6px;opacity:.9}
+.filter-control{position:relative;cursor:pointer;user-select:none}
+.filter-control input{position:absolute;opacity:0;width:1px;height:1px}
+.filter-control .check,.filter-control .radio{flex:0 0 auto}
+.filter-control input:not(:checked)+.check{background:#ffffff22;border:1px solid #ffffffaa}
+.filter-control input:not(:checked)+.check:after{content:"";display:none}
+.filter-control input:checked+.check:after{content:"✓";display:block}
+.filter-control input:not(:checked)+.radio{background:transparent}
+.filter-control input:checked+.radio{background:#fff;box-shadow:inset 0 0 0 5px #7c36b8}
+.filter-control:focus-within{outline:2px solid #d5ff98;outline-offset:2px;border-radius:8px}
+.map-location-btn{width:100%;margin-top:12px;padding:10px 12px;border-radius:999px;background:#fff;color:#6326a0;font-weight:700}
+.eco-results{margin-top:16px;max-height:300px;overflow:auto}
+.eco-results-title{font-size:12px;font-weight:700;margin:0 0 8px;color:#f0ffdb}
+.eco-result{width:100%;display:flex;align-items:center;gap:9px;text-align:left;background:#ffffff15;border:1px solid #ffffff30;border-radius:12px;padding:10px;margin-bottom:8px;color:#fff}
+.eco-result.selected,.eco-result:hover{background:#ffffff2b;border-color:#d7ff9b}
+.eco-result-icon{display:grid;place-items:center;flex:0 0 30px;height:30px;border-radius:50%;background:#45c653;color:#fff}
+.eco-result>span:nth-child(2){flex:1;min-width:0}
+.eco-result strong,.eco-result small{display:block}
+.eco-result strong{font-size:12px}
+.eco-result small{font-size:10px;line-height:1.4;opacity:.85;margin-top:3px}
+.eco-empty{font-size:12px;line-height:1.5;color:#fff;background:#ffffff15;border-radius:12px;padding:12px}
+.btn-map-clear{background:#ffffff;color:#6825a4}
+.map-disclaimer{font-size:10px;line-height:1.5;opacity:.78;margin:14px 0 0}
+.eco-info-window{font-family:Poppins,Arial,sans-serif;max-width:250px;padding:4px;color:#29242e}
+.eco-info-window strong{display:block;color:#6523a1;font-size:15px;margin-bottom:5px}
+.eco-info-window p{font-size:12px;line-height:1.45;margin:5px 0}
+.eco-info-window a{display:inline-block;margin:7px 8px 0 0;color:#287c3b;font-weight:700;font-size:12px}
+.eco-filter-page{max-width:800px;margin:0 auto;background:linear-gradient(135deg,#6d21aa,#9a5bd4);color:#fff}
+.eco-filter-page h2{margin-top:0}
+.eco-filter-page>p{font-size:14px;line-height:1.6;opacity:.92}
+.filter-page-options{margin-top:16px}
+.filter-page-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn-filter-reset{background:#bd7ee5;color:#fff}
+.filter-location-status{font-size:12px;line-height:1.5;opacity:.9}
+.local-note{font-size:12px;line-height:1.6;color:#655d6b;margin:14px 0 0}
+#ecoLocationDetails .detail-row{line-height:1.6}
+#ecoLocationDetails .detail-row strong{color:#6523a1}
+@media(max-width:900px){
+  .map-live-wrap{min-height:500px}
+  .eco-google-map{min-height:500px}
+  .eco-results{max-height:220px}
+}
+@media(max-width:600px){
+  .map-live-wrap{min-height:470px}
+  .eco-google-map{min-height:470px}
+  .map-search{left:12px;right:12px;top:12px;padding:8px 12px}
+  .map-key-help{inset:68px 12px 58px;padding:16px}
+  .map-key-help h3{font-size:19px}
+  .map-status{left:12px;bottom:10px}
+  .filter-page-actions .btn{flex:1}
+}
+
+
+/* ==========================================================
+   Configurações: toggle de tema, aviso de notificações e janelas
+   ========================================================== */
+.toggle{transition:background .2s}
+.toggle span{transition:margin-left .2s}
+.toggle.off{background:#bda6d8}
+.toggle.off span{margin-left:0}
+.toggle:focus-visible{outline:3px solid #a46bd4;outline-offset:2px}
+
+.setting-action{cursor:pointer;user-select:none;transition:box-shadow .2s}
+.setting-action:hover{box-shadow:0 3px 12px rgba(80,40,120,.16)}
+.setting-action:focus-visible{outline:3px solid #a46bd4;outline-offset:2px}
+
+/* Aviso no topo da tela */
+.eco-toast{
+  position:fixed;z-index:300;top:calc(env(safe-area-inset-top,0px) + 14px);left:50%;
+  width:min(420px,92vw);display:flex;align-items:center;gap:14px;
+  background:#fffdf4;color:var(--ink);border:1px solid #e2a8ee;border-radius:20px;
+  padding:14px 18px;box-shadow:0 12px 32px rgba(45,27,70,.28);
+  transform:translate(-50%,-160%);opacity:0;pointer-events:none;
+  transition:transform .35s ease,opacity .25s ease;cursor:pointer
+}
+.eco-toast.is-visible{transform:translate(-50%,0);opacity:1;pointer-events:auto}
+.eco-toast-icon{width:42px;height:42px;flex:0 0 42px;border-radius:50%;background:#a46bd4;color:#fff;display:grid;place-items:center;font-size:20px}
+.eco-toast-text strong{display:block;color:var(--purple);font-weight:800}
+.eco-toast-text span{display:block;font-size:14px;color:#555}
+
+/* Janelas sobrepostas (Privacidade, Ajuda, Sobre) */
+.eco-modal{
+  position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;
+  padding:24px;background:rgba(45,20,75,.38);backdrop-filter:blur(2px)
+}
+.eco-modal.is-open{display:flex;animation:ecoFade .2s ease}
+.eco-modal-panel{
+  width:min(640px,100%);max-height:calc(100vh - 48px);max-height:calc(100dvh - 48px);
+  overflow-y:auto;overscroll-behavior:contain;
+  background:#ead8f2;border-radius:28px;padding:22px 25px 25px;
+  box-shadow:0 18px 50px rgba(30,10,55,.35);animation:ecoRise .25s ease
+}
+.eco-modal-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.eco-modal-head h2{flex:1;margin:0;font-size:24px;font-weight:800;color:var(--purple)}
+.eco-modal-close{width:40px;height:40px;flex:0 0 40px;border-radius:50%;background:#a46bd4;color:#fff;font-size:17px}
+.eco-modal-close:focus-visible{outline:3px solid #6720a6;outline-offset:2px}
+.eco-modal-card{background:#fffdf4;border-radius:16px;padding:15px 18px;margin-bottom:12px}
+.eco-modal-card h3{margin:0 0 6px;font-size:16px;color:var(--purple)}
+.eco-modal-card p,.eco-modal-card li{margin:0;font-size:14px;line-height:1.65;color:#4a4552}
+.eco-modal-card ul{margin:0;padding-left:20px}
+.eco-modal-card li+li{margin-top:6px}
+.eco-modal-card li strong{color:var(--ink)}
+.eco-modal-note{margin:0 4px 12px;font-size:12px;line-height:1.6;color:#655d6b}
+.eco-modal-action{width:100%;margin-top:6px}
+body.modal-open{overflow:hidden}
+
+.help-channels{display:grid;gap:10px;margin-bottom:10px}
+.help-channel{display:flex;align-items:center;gap:15px;background:#fffdf4;border-radius:16px;padding:13px 18px}
+.help-channel-icon{width:42px;height:42px;flex:0 0 42px;border-radius:50%;background:#a46bd4;color:#fff;display:grid;place-items:center;font-size:20px}
+.help-channel-text strong{display:block}
+.help-channel-text span{font-size:14px;color:#555}
+.help-faq{border-top:2px solid #e2a8ee;padding:10px 0}
+.help-faq:first-of-type{margin-top:6px}
+.help-faq summary{cursor:pointer;font-weight:600;font-size:14px;line-height:1.5}
+.help-faq summary:focus-visible{outline:3px solid #a46bd4;outline-offset:3px;border-radius:6px}
+.help-faq p{margin-top:8px}
+
+@keyframes ecoFade{from{opacity:0}to{opacity:1}}
+@keyframes ecoRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+  .eco-modal.is-open,.eco-modal-panel{animation:none}
+  .eco-toast,.toggle,.toggle span{transition:none}
+}
+@media(max-width:600px){
+  .eco-modal{padding:14px}
+  .eco-modal-panel{padding:18px 16px 18px;border-radius:24px;max-height:calc(100vh - 28px);max-height:calc(100dvh - 28px)}
+  .eco-modal-head h2{font-size:20px}
+}
+
+/* ==========================================================
+   MODO ESCURO (roxo predominante; o que era roxo vira verde escuro)
+   Ativado por <html data-theme="dark">. O modo claro é o padrão.
+   ========================================================== */
+html[data-theme="dark"]{
+  --purple:#46b565;--ink:#f1eafc;--shadow:0 8px 22px rgba(0,0,0,.45);
+  scrollbar-color:#5b3aa0 #170d2b
+}
+html[data-theme="dark"],html[data-theme="dark"] body{background:#120a22}
+html[data-theme="dark"] .site{background:linear-gradient(135deg,#150b28,#25114b)}
+
+/* Barras e navegação */
+html[data-theme="dark"] .topbar{background:linear-gradient(90deg,#4a1c8f,#6a2fc2);box-shadow:0 3px 14px rgba(0,0,0,.4)}
+html[data-theme="dark"] .brand-mark{color:#1f8a3b}
+html[data-theme="dark"] .bottom-nav{background:linear-gradient(90deg,#4a1c8f,#6a2fc2)}
+html[data-theme="dark"] .bottom-nav a.active{color:#7be09a}
+
+/* Textos */
+html[data-theme="dark"] .page-subtitle{color:#c4b6e0}
+html[data-theme="dark"] .mini-note,html[data-theme="dark"] .local-note{color:#bdb0d9}
+html[data-theme="dark"] [style*="5a5b55"]{color:#e3d8f5!important}
+html[data-theme="dark"] [style*="6d20ad"]{color:var(--purple)!important}
+html[data-theme="dark"] [style*="8c47c7"]{color:var(--purple)!important}
+
+/* Botões */
+html[data-theme="dark"] .btn-purple{background:linear-gradient(90deg,#176c2d,#26903f)}
+html[data-theme="dark"] .btn-green{background:linear-gradient(90deg,#7a3fd1,#a463ea)}
+html[data-theme="dark"] .btn-map-clear{background:#fff;color:#176c2d}
+html[data-theme="dark"] .btn-filter-reset{background:#ffffff26}
+html[data-theme="dark"] .game-entry{background:linear-gradient(135deg,#145a28,#26903f)}
+html[data-theme="dark"] .game-entry .btn{color:#176c2d}
+
+/* Home */
+html[data-theme="dark"] .hero{background:linear-gradient(135deg,#43188a 0%,#5e28b3 45%,#3b2a9e 100%)}
+html[data-theme="dark"] .mission-card{background:linear-gradient(120deg,#1b6f35,#17604a);color:#eafff0}
+html[data-theme="dark"] .progress>span{background:linear-gradient(90deg,#1f8a3b,#52cc72)}
+html[data-theme="dark"] .eco-tip{background:#2f1b5c}
+html[data-theme="dark"] .eco-tip:after{color:#9b6cf055}
+html[data-theme="dark"] .home-level-card{background:linear-gradient(135deg,#2f1b5c,#3a2573);border-color:#ffffff22}
+html[data-theme="dark"] .home-points strong{color:var(--purple)}
+
+/* Cartões e mapa */
+html[data-theme="dark"] .card,html[data-theme="dark"] .location-card{background:#2a1850;color:var(--ink)}
+html[data-theme="dark"] .detail-row{border-bottom-color:#4a3380}
+html[data-theme="dark"] #ecoLocationDetails .detail-row strong{color:var(--purple)}
+html[data-theme="dark"] .map-live-wrap{background:#241347}
+html[data-theme="dark"] .map-panel{background:linear-gradient(#14582a,#2a8a46)}
+html[data-theme="dark"] .check{background:#8a4fe0}
+html[data-theme="dark"] .filter-control input:checked+.radio{box-shadow:inset 0 0 0 5px #176c2d}
+html[data-theme="dark"] .map-location-btn{color:#176c2d}
+html[data-theme="dark"] .eco-result-icon{background:#7a3fd1}
+html[data-theme="dark"] .eco-filter-page{background:linear-gradient(135deg,#14582a,#2a8a46);color:#fff}
+html[data-theme="dark"] .map-search{background:#2a1850;color:var(--purple)}
+html[data-theme="dark"] .map-search input{color:#f1eafc}
+html[data-theme="dark"] .map-search button{background:#3a2573;color:var(--purple)}
+html[data-theme="dark"] .map-status{background:#2a1850;color:#c4b6e0}
+html[data-theme="dark"] .map-status.is-error{background:#3a1c4d;color:#ffb3ec}
+html[data-theme="dark"] .map-key-help{background:linear-gradient(145deg,#2a1850,#1c3a2a);border-color:#4a3380;color:var(--ink)}
+html[data-theme="dark"] .map-key-help code{background:#170d2b;color:#7be09a}
+html[data-theme="dark"] .map-key-help a{background:#176c2d}
+
+/* Desafios */
+html[data-theme="dark"] .challenge-page{background:linear-gradient(#4a1c8f 0 220px,#5b34a6 220px 235px,#1f1240 235px,#170d2b 100%)}
+html[data-theme="dark"] .level-card{background:#2b0f5c}
+html[data-theme="dark"] .challenge-list{background:#2a1850}
+html[data-theme="dark"] .challenge{border-bottom-color:#4a3380}
+html[data-theme="dark"] .status{border-color:#c9bce6}
+html[data-theme="dark"] .status.done{background:#1f8a3b;border-color:#52cc72}
+html[data-theme="dark"] .challenge .btn[style*="c697e6"]{background:#1f8a3b!important}
+
+/* Registrar visita */
+html[data-theme="dark"] [style*="6aa947"]{background:linear-gradient(135deg,#6a2cc4,#9055e0)!important}
+
+/* Configurações */
+html[data-theme="dark"] .settings{background:#2a1850}
+html[data-theme="dark"] .setting{background:#3a2573}
+html[data-theme="dark"] .setting-icon,html[data-theme="dark"] .help-channel-icon,html[data-theme="dark"] .eco-toast-icon{background:#1f8a3b}
+html[data-theme="dark"] .setting-main span{color:#c4b6e0}
+html[data-theme="dark"] .toggle{background:#1f8a3b}
+html[data-theme="dark"] .setting-action:hover{box-shadow:0 3px 12px rgba(0,0,0,.4)}
+html[data-theme="dark"] .setting-action:focus-visible,html[data-theme="dark"] .toggle:focus-visible,html[data-theme="dark"] .help-faq summary:focus-visible{outline-color:#7be09a}
+
+/* Aviso e janelas */
+html[data-theme="dark"] .eco-toast{background:#3a2573;border-color:#5b3aa0;box-shadow:0 12px 32px rgba(0,0,0,.55)}
+html[data-theme="dark"] .eco-toast-text span{color:#c4b6e0}
+html[data-theme="dark"] .eco-modal{background:rgba(8,3,20,.55)}
+html[data-theme="dark"] .eco-modal-panel{background:#2a1850;box-shadow:0 18px 50px rgba(0,0,0,.6)}
+html[data-theme="dark"] .eco-modal-close{background:#1f8a3b}
+html[data-theme="dark"] .eco-modal-close:focus-visible{outline-color:#7be09a}
+html[data-theme="dark"] .eco-modal-card,html[data-theme="dark"] .help-channel{background:#3a2573}
+html[data-theme="dark"] .eco-modal-card p,html[data-theme="dark"] .eco-modal-card li{color:#d9ceef}
+html[data-theme="dark"] .eco-modal-card li strong{color:#fff}
+html[data-theme="dark"] .eco-modal-note{color:#bdb0d9}
+html[data-theme="dark"] .help-channel-text span{color:#c4b6e0}
+html[data-theme="dark"] .help-faq{border-top-color:#5b3aa0}
+
+/* Entrada, login e abertura */
+html[data-theme="dark"] .auth-page{background:linear-gradient(160deg,#3b1580 0%,#4a1f9a 38%,#2f1a66 78%,#1c1040 100%)}
+html[data-theme="dark"] .splash{background:linear-gradient(160deg,#3a1480,#4a1f9a 40%,#2c1766 78%,#1b0f40)}
+html[data-theme="dark"] .logo-pin{background:#1f8a3b}
+html[data-theme="dark"] .auth-switch button.active{color:#176c2d}
+html[data-theme="dark"] .input:focus{outline-color:#7be09a}
+
+
+/* ==========================================================
+   Gamificação: aba Desafios só para quem tem cadastro
+   ========================================================== */
+html:not([data-gamer="true"]) .desktop-nav a[href="desafios.html"],
+html:not([data-gamer="true"]) .bottom-nav a[href="desafios.html"]{display:none}
+
+/* Logos dos canais de suporte (Ajuda) */
+.help-channel-logo{width:42px;height:42px;flex:0 0 42px;border-radius:12px;display:grid;place-items:center;overflow:hidden}
+.help-channel-logo svg{width:26px;height:26px;display:block}
+.logo-whatsapp{background:#25d366}
+.logo-instagram{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}
+.logo-email{background:#fff;border:1px solid #e4dcea}
+.logo-email svg{width:28px;height:22px}
+
+
+/* ==========================================================
+   Ícones (sino, cadeado, sair e menu do celular)
+   ========================================================== */
+.icon-btn{display:grid;place-items:center}
+.icon-btn svg{width:22px;height:22px;display:block}
+.setting-icon svg,.eco-toast-icon svg{width:21px;height:21px;display:block}
+@media(max-width:900px){
+  .bottom-nav a{display:grid;place-items:center}
+  .bottom-nav a svg{width:26px;height:26px;display:block}
+}
+
+/* Botão "Registrar missão" com um respiro da linha acima */
+#registerMission{margin-top:18px}
+
+/* ==========================================================
+   Dicas da tela inicial: cards empilhados que viram ao toque
+   ========================================================== */
+.eco-tip{
+  cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent;
+  box-shadow:0 7px 0 -3px #d9efb3,0 14px 0 -6px #c5e394,0 20px 26px -10px rgba(60,100,40,.4);
+  transform:perspective(800px) rotateY(0deg) translateY(0);
+  transition:transform .2s ease,box-shadow .2s ease
+}
+.eco-tip:hover{transform:perspective(800px) rotateY(0deg) translateY(-3px)}
+.eco-tip:active{transform:perspective(800px) rotateY(0deg) translateY(0)}
+.eco-tip.is-turning{transform:perspective(800px) rotateY(90deg) translateY(0)}
+.eco-tip:focus-visible{outline:3px solid #a46bd4;outline-offset:4px}
+.eco-tip-hint{display:block;margin-top:12px;font-size:12px;font-weight:600;color:#5b8a3a;position:relative;z-index:1}
+@media(prefers-reduced-motion:reduce){.eco-tip{transition:none}}
+html[data-theme="dark"] .eco-tip{box-shadow:0 7px 0 -3px #261650,0 14px 0 -6px #1e1042,0 20px 26px -10px rgba(0,0,0,.55)}
+html[data-theme="dark"] .eco-tip-hint{color:#b9a6ea}
+html[data-theme="dark"] .eco-tip:focus-visible{outline-color:#7be09a}
+/* Mantém a altura do card estável ao trocar de dica (até 2 linhas de texto) */
+.eco-tip p{min-height:3em;min-height:2lh}
+
+
+/* Contexto do local na tela Registrar Visita */
+.visit-place-context{
+  margin-top:20px;
+  padding:14px 18px;
+  border-radius:16px;
+  background:linear-gradient(135deg,#eef8e9,#f4f9ed);
+  border:1px solid #d8ebce;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  color:#315b2b;
+}
+.visit-place-context strong{font-size:17px;font-weight:800}
+.visit-place-context span{font-size:12px;font-weight:700;color:#63944b;text-transform:uppercase;letter-spacing:.04em}
+.visit-place-context p{margin:3px 0 0;font-size:13px;color:#58704f}
+html[data-theme="dark"] .visit-place-context{
+  background:linear-gradient(135deg,#263d2a,#30452d);
+  border-color:#466744;
+  color:#f1f8ed;
+}
+html[data-theme="dark"] .visit-place-context span,
+html[data-theme="dark"] .visit-place-context p{color:#c5dfba}
